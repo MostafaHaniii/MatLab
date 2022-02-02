@@ -1,0 +1,37 @@
+function RTW_rtwnameSIDMap() {
+	this.rtwnameHashMap = new Array();
+	this.sidHashMap = new Array();
+	this.rtwnameHashMap["<Root>"] = {sid: "LogicalOperations"};
+	this.sidHashMap["LogicalOperations"] = {rtwname: "<Root>"};
+	this.rtwnameHashMap["<Root>/In1"] = {sid: "LogicalOperations:1"};
+	this.sidHashMap["LogicalOperations:1"] = {rtwname: "<Root>/In1"};
+	this.rtwnameHashMap["<Root>/In2"] = {sid: "LogicalOperations:2"};
+	this.sidHashMap["LogicalOperations:2"] = {rtwname: "<Root>/In2"};
+	this.rtwnameHashMap["<Root>/Logical Operator"] = {sid: "LogicalOperations:3"};
+	this.sidHashMap["LogicalOperations:3"] = {rtwname: "<Root>/Logical Operator"};
+	this.rtwnameHashMap["<Root>/Logical Operator1"] = {sid: "LogicalOperations:4"};
+	this.sidHashMap["LogicalOperations:4"] = {rtwname: "<Root>/Logical Operator1"};
+	this.rtwnameHashMap["<Root>/Logical Operator2"] = {sid: "LogicalOperations:5"};
+	this.sidHashMap["LogicalOperations:5"] = {rtwname: "<Root>/Logical Operator2"};
+	this.rtwnameHashMap["<Root>/Logical Operator3"] = {sid: "LogicalOperations:6"};
+	this.sidHashMap["LogicalOperations:6"] = {rtwname: "<Root>/Logical Operator3"};
+	this.rtwnameHashMap["<Root>/Logical Operator5"] = {sid: "LogicalOperations:8"};
+	this.sidHashMap["LogicalOperations:8"] = {rtwname: "<Root>/Logical Operator5"};
+	this.rtwnameHashMap["<Root>/Logical Operator6"] = {sid: "LogicalOperations:10"};
+	this.sidHashMap["LogicalOperations:10"] = {rtwname: "<Root>/Logical Operator6"};
+	this.rtwnameHashMap["<Root>/Out1"] = {sid: "LogicalOperations:11"};
+	this.sidHashMap["LogicalOperations:11"] = {rtwname: "<Root>/Out1"};
+	this.rtwnameHashMap["<Root>/Out2"] = {sid: "LogicalOperations:13"};
+	this.sidHashMap["LogicalOperations:13"] = {rtwname: "<Root>/Out2"};
+	this.rtwnameHashMap["<Root>/Out3"] = {sid: "LogicalOperations:14"};
+	this.sidHashMap["LogicalOperations:14"] = {rtwname: "<Root>/Out3"};
+	this.rtwnameHashMap["<Root>/Out4"] = {sid: "LogicalOperations:15"};
+	this.sidHashMap["LogicalOperations:15"] = {rtwname: "<Root>/Out4"};
+	this.rtwnameHashMap["<Root>/Out5"] = {sid: "LogicalOperations:16"};
+	this.sidHashMap["LogicalOperations:16"] = {rtwname: "<Root>/Out5"};
+	this.rtwnameHashMap["<Root>/Out6"] = {sid: "LogicalOperations:17"};
+	this.sidHashMap["LogicalOperations:17"] = {rtwname: "<Root>/Out6"};
+	this.getSID = function(rtwname) { return this.rtwnameHashMap[rtwname];}
+	this.getRtwname = function(sid) { return this.sidHashMap[sid];}
+}
+RTW_rtwnameSIDMap.instance = new RTW_rtwnameSIDMap();
